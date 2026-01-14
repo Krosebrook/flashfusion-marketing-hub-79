@@ -26,6 +26,7 @@ import TermsPage from "./pages/TermsPage";
 import SecurityPage from "./pages/SecurityPage";
 import SignInPage from "./pages/SignInPage";
 import SignUpPage from "./pages/SignUpPage";
+import AdminDashboard from "./pages/AdminDashboard";
 import NotFoundPage from "./pages/NotFoundPage";
 
 const queryClient = new QueryClient();
@@ -47,6 +48,7 @@ const App = () => (
                   <Route path="/pricing" element={<PricingPage />} />
                   <Route path="/demo" element={<ProtectedRoute><DemoPage /></ProtectedRoute>} />
                   <Route path="/demo/ai-creation" element={<ProtectedRoute><AICreationPage /></ProtectedRoute>} />
+                  <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
                   <Route path="/docs" element={<DocsPage />} />
                   <Route path="/tutorials" element={<TutorialsPage />} />
                   <Route path="/blog" element={<BlogPage />} />
