@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { SEO } from '@/components/SEO';
 import { LeadCaptureForm } from '@/components/LeadCaptureForm';
+import { AnimatedHeroBackground } from '@/components/AnimatedHeroBackground';
 import { track } from '@/lib/track';
 import {
   Zap,
@@ -82,10 +83,8 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        {/* Background effects */}
-        <div className="absolute inset-0 grid-pattern opacity-30" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/20 rounded-full blur-[120px] -z-10" />
-        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-accent/20 rounded-full blur-[100px] -z-10" />
+        {/* Animated Background */}
+        <AnimatedHeroBackground />
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <motion.div
