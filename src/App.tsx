@@ -16,6 +16,7 @@ import PricingPage from "./pages/PricingPage";
 import DemoPage from "./pages/DemoPage";
 import AICreationPage from "./pages/AICreationPage";
 import DocsPage from "./pages/DocsPage";
+import APIDocsPage from "./pages/APIDocsPage";
 import TutorialsPage from "./pages/TutorialsPage";
 import BlogPage from "./pages/BlogPage";
 import FAQPage from "./pages/FAQPage";
@@ -50,6 +51,7 @@ const App = () => (
                   <Route path="/demo/ai-creation" element={<ProtectedRoute><AICreationPage /></ProtectedRoute>} />
                   <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
                   <Route path="/docs" element={<DocsPage />} />
+                  <Route path="/docs/api" element={<APIDocsPage />} />
                   <Route path="/tutorials" element={<TutorialsPage />} />
                   <Route path="/blog" element={<BlogPage />} />
                   <Route path="/faq" element={<FAQPage />} />
