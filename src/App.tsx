@@ -28,6 +28,7 @@ import SecurityPage from "./pages/SecurityPage";
 import SignInPage from "./pages/SignInPage";
 import SignUpPage from "./pages/SignUpPage";
 import AdminDashboard from "./pages/AdminDashboard";
+import PRDGeneratorPage from "./pages/PRDGeneratorPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 const queryClient = new QueryClient();
@@ -52,6 +53,7 @@ const App = () => (
                   <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
                   <Route path="/docs" element={<DocsPage />} />
                   <Route path="/docs/api" element={<APIDocsPage />} />
+                  <Route path="/prd-generator" element={<PRDGeneratorPage />} />
                   <Route path="/tutorials" element={<TutorialsPage />} />
                   <Route path="/blog" element={<BlogPage />} />
                   <Route path="/faq" element={<FAQPage />} />
